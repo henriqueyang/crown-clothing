@@ -1,4 +1,4 @@
-import UserActionTypes from '../types/user';
+import UserActionTypes from './types';
 
 const INITIAL_STATE = {
   currentUser: null,
