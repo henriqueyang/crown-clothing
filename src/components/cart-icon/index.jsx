@@ -4,15 +4,18 @@ import { createStructuredSelector } from 'reselect';
 
 import { toggleCartHidden } from '../../store/cart/actions';
 import { selectCartItemsCount } from '../../store/cart/selectors';
-import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
 
-import './styles.scss';
+import {
+  CartIconContainer,
+  ShoppingIcon,
+  ItemCountContainer,
+} from './styles';
 
 const CartIcon = ({ toggleCartHidden, itemCount }) => (
-  <div className="cart-icon" role="presentation" onClick={toggleCartHidden}>
-    <ShoppingIcon className="shopping-icon" />
-    <span className="item-count">{itemCount}</span>
-  </div>
+  <CartIconContainer role="presentation" onClick={toggleCartHidden}>
+    <ShoppingIcon />
+    <ItemCountContainer>{itemCount}</ItemCountContainer>
+  </CartIconContainer>
 );
 
 const mapDispatchToProps = (dispatch) => ({

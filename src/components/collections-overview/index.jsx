@@ -5,14 +5,14 @@ import { createStructuredSelector } from 'reselect';
 import { selectCollectionsForPreview } from '../../store/shop/selectors';
 import CollectionPreview from '../collection-preview';
 
-import './styles.scss';
+import CollectionsOverviewContainer from './styles';
 
 const CollectionsOverview = ({ collections }) => (
-  <div className="collections-overview">
+  <CollectionsOverviewContainer>
     {collections.map(({ id, ...otherCollectionProps }) => (
       <CollectionPreview key={id} {...otherCollectionProps} />
     ))}
-  </div>
+  </CollectionsOverviewContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
