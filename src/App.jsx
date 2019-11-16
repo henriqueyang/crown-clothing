@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import './App.scss';
+import './App.css';
 
 import { auth, createUserProfileDocument } from './configs/firebase';
 import { setCurrentUser } from './store/user/actions';
