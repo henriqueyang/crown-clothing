@@ -28,6 +28,7 @@
         "react/jsx-props-no-spreading": "off",
         "react/button-has-type": "off",
         "no-shadow": "off",
-        "react/jsx-one-expression-per-line": "off"
+        "react/jsx-one-expression-per-line": "off",
+        "no-console": "off"
     }
 }
